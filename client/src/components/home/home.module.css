@@ -1,0 +1,77 @@
+.filterCont {
+  height: 6rem;
+  background-color: rgb(254, 202, 27);
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  display: inline;
+  margin-left: 2rem;
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(239, 83, 80);
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.name {
+  display: inline;
+  margin-left: 2rem;
+  border: 3px solid #004777;
+  border-radius: 8px;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.name:hover,
+.name:focus {
+  background: rgba(239, 83, 80, 0.7);
+}
+
+.opCont {
+  background: #00477752;
+  box-shadow: opx 8px 16px 0px #004777;
+  z-index: 1;
+}
+
+.opCont p {
+  color: rgb(254, 202, 27);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+  display: block;
+}
+
+.opCont p:hover {
+  background-color: #004777a4;
+}
+
+.filterBy {
+  display: flex;
+  justify-content: space-around;
+  font-family: monospace;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #004777;
+  background-color: #00477741;
+}
+
+.filterBy h4 {
+  display: inline;
+}
+.filterBy p {
+  display: inline;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

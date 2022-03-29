@@ -1,0 +1,61 @@
+.container {
+  width: 55rem;
+  display: flex;
+  border: 2px solid #004777;
+  border-radius: 40px;
+  margin-left: 25%;
+  padding-left: 5rem;
+  margin-top: 3rem;
+  background-color: rgba(68, 175, 105, 0.6);
+  box-shadow: 10px 10px 30px 7px #004777;
+}
+
+.titleContainer {
+  position: absolute;
+  margin-top: 0;
+  display: block;
+}
+.dataContainer {
+  margin-top: 13rem;
+  margin-bottom: 1rem;
+}
+
+.imgContainer {
+  margin-top: 10rem;
+  margin-right: 3rem;
+}
+
+.name {
+  display: block;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+  font-family: monospace;
+  font-size: 5rem;
+}
+.abName {
+  display: inline;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+.infoContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.image {
+  width: 400px;
+}
+
+.button {
+  padding: 15px;
+  border-radius: 8px;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  border: 2px solid rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}
+.button:hover {
+  cursor: pointer;
+}

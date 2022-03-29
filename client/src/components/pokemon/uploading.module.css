@@ -1,0 +1,7 @@
+.uploading {
+  font-family: monospace;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: rgb(239, 83, 80);
+  text-shadow: 2px 2px 2px #004777;
+}

@@ -1,0 +1,81 @@
+{
+  "pokemonList": [
+    {
+      "name": "pokeClau1",
+      "health": 30,
+      "strength": 40,
+      "defense": 50,
+      "velocity": 60,
+      "height": 70,
+      "weight": 80,
+      "types": ["rock", "bug", "ghost"]
+    },
+    {
+      "name": "pokeClau2",
+      "health": 30,
+      "strength": 40,
+      "defense": 50,
+      "velocity": 60,
+      "height": 70,
+      "weight": 80,
+      "types": ["rock", "bug", "ghost"]
+    },
+    {
+      "name": "pokeClau3",
+      "health": 30,
+      "strength": 40,
+      "defense": 50,
+      "velocity": 60,
+      "height": 70,
+      "weight": 80,
+      "types": ["rock", "bug", "ghost"]
+    }
+  ],
+  "pokemonFiltered": [
+    {
+      "name": "pokeClau1",
+      "health": 30,
+      "strength": 40,
+      "defense": 50,
+      "velocity": 60,
+      "height": 70,
+      "weight": 80,
+      "types": ["rock", "bug", "ghost"]
+    },
+    {
+      "name": "pokeClau2",
+      "health": 30,
+      "strength": 40,
+      "defense": 50,
+      "velocity": 60,
+      "height": 70,
+      "weight": 80,
+      "types": ["rock", "bug", "ghost"]
+    },
+    {
+      "name": "pokeClau3",
+      "health": 30,
+      "strength": 40,
+      "defense": 50,
+      "velocity": 60,
+      "height": 70,
+      "weight": 80,
+      "types": ["rock", "bug", "ghost"]
+    }
+  ],
+  "pokemonDetail": {
+    "id": 8,
+    "name": "pokeClau2",
+    "health": 30,
+    "strength": 40,
+    "defense": 50,
+    "velocity": 60,
+    "height": 70,
+    "weight": 80,
+    "types": ["rock", "bug", "ghost"]
+  },
+  "pokemonAdded": {},
+  "pokemonTypes": ["rock", "bug", "ghost"],
+  "uploading": false,
+  "loading": false
+}

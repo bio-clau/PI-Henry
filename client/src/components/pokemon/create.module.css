@@ -1,0 +1,139 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  width: 50%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #004777;
+  border-radius: 40px;
+  background-color: rgba(68, 175, 105, 0.6);
+  box-shadow: 10px 10px 30px 7px #004777;
+}
+.inputContainer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.inputContainerType {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.label {
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+  font-family: monospace;
+  font-size: 2rem;
+}
+.input {
+  border: 2px solid #004777;
+  border-radius: 10px;
+  background-color: #0047773a;
+  color: rgb(254, 202, 27);
+  font-family: monospace;
+  font-size: 2rem;
+}
+.inputImg {
+  margin-top: 1.3rem;
+  border: 2px solid #004777;
+  border-radius: 10px;
+  background-color: #0047773a;
+  color: rgb(254, 202, 27);
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.danger {
+  border: 2px solid #004777;
+  border-radius: 10px;
+  background-color: #0047773a;
+  color: rgb(254, 202, 27);
+  font-family: monospace;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(239, 83, 80);
+}
+.err {
+  color: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+.errTypes {
+  display: block;
+  color: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+.submit {
+  padding: 15px;
+  border-radius: 8px;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  border: 2px solid rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.loading {
+  padding: 15px;
+  border-radius: 8px;
+  background: rgb(235, 190, 189);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(239, 83, 80);
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.opCont {
+  background: #00477752;
+  box-shadow: opx 8px 16px 0px #004777;
+  z-index: 1;
+}
+.typeMenu {
+  display: inline;
+  margin-left: 2rem;
+  border: 3px solid #004777;
+  border-radius: 8px;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.typeButton {
+  background: rgb(239, 83, 80);
+  border: 3px solid #004777;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+  margin-left: 1rem;
+}

@@ -1,0 +1,18 @@
+.about {
+  background: rgb(239, 83, 80);
+  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+.about h5 {
+  margin-top: 25px;
+  font-weight: bold;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}

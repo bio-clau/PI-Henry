@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  margin-top: 5rem;
+  height: 5rem;
+  width: 25rem;
+  margin-right: 4rem;
+  margin-left: 10px;
+  border-radius: 8px;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  border: 2px solid #004777;
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.container img {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 9rem;
+}

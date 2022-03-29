@@ -1,0 +1,22 @@
+.pagination {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+}
+.pagination button {
+  cursor: pointer;
+  display: inline;
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #004777;
+  border-radius: 7px;
+  background: rgb(239, 83, 80);
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}
+
+.selPag {
+  box-shadow: 2px 2px 2px #004777;
+}

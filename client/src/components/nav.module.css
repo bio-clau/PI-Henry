@@ -1,0 +1,30 @@
+.container {
+  height: 6rem;
+  background-color: rgb(239, 83, 80);
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: inline;
+  height: 5.9rem;
+  padding-left: 1.5rem;
+}
+
+.menu {
+  display: inline;
+  margin-left: 2rem;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}

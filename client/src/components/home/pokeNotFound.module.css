@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gif {
+  margin: 7rem;
+}
+
+.msg {
+  margin-bottom: 3rem;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #004777;
+}
+
+.button {
+  width: fit-content;
+  cursor: pointer;
+  padding: 1rem;
+  margin-bottom: 1px;
+  border-radius: 8px;
+  background: rgb(239, 83, 80);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  border: 2px solid rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+}
