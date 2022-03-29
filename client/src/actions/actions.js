@@ -21,7 +21,7 @@ import {
 export function addPoke(pokemon) {
   return function (dispatch) {
     dispatch({ type: UPLOAD_POKE, payload: true });
-    return fetch("http://localhost:3001/pokemons", {
+    return fetch("https://henry-pi-backend.herokuapp.com/pokemons", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(pokemon),
@@ -41,7 +41,7 @@ export function delPokeAdd() {
 
 export function getTypes() {
   return function (dispatch) {
-    return fetch("http://localhost:3001/type")
+    return fetch("https://henry-pi-backend.herokuapp.com/type")
       .then((res) => res.json())
       .then((rta) => {
         dispatch({ type: GET_TYPES, payload: rta });
@@ -53,7 +53,7 @@ export function getTypes() {
 export function getPoke() {
   return function (dispatch) {
     dispatch({ type: LOADING_POKE, payload: true });
-    return fetch("http://localhost:3001/pokemons")
+    return fetch("https://henry-pi-backend.herokuapp.com/pokemons")
       .then((res) => res.json())
       .then((rta) => {
         dispatch({ type: LOADING_POKE, payload: false });
@@ -65,7 +65,7 @@ export function getPoke() {
 
 export function pokeDetail(id) {
   return function (dispatch) {
-    return fetch(`http://localhost:3001/pokemons/${id}`)
+    return fetch(`https://henry-pi-backend.herokuapp.com/pokemons/${id}`)
       .then((res) => res.json())
       .then((rta) => {
         dispatch({ type: GET_DETAIL, payload: rta });
@@ -85,7 +85,7 @@ export function delPokeDet() {
 export function getName(name) {
   return function (dispatch) {
     dispatch({ type: LOADING_POKE, payload: true });
-    return fetch(`http://localhost:3001/pokemons/?name=${name}`)
+    return fetch(`https://henry-pi-backend.herokuapp.com/pokemons/?name=${name}`)
       .then((res) => res.json())
       .then((rta) => {
         dispatch({ type: LOADING_POKE, payload: false });
