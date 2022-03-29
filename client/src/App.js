@@ -9,6 +9,7 @@ import CreateSee from './components/pokemon/createSee'
 import Footer from './components/footer'
 import RandomPoke from './components/pokemon/randomPoke'
 import PokeDetail from './components/pokemon/pokeDetail'
+import PokeNotFound from './components/home/pokeNotFound'
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
         element={<PokeDetail from={'detail'} />} />
         <Route exact path='/about'
         element={<About />} />
+        <Route exact path='/*'
+        element={<PokeNotFound goinit={true} />} />
       </Routes>
       <Footer />
     </div>
