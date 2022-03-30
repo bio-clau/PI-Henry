@@ -1,5 +1,5 @@
 .container {
-  width: 55rem;
+  width: 40rem;
   display: flex;
   border: 2px solid #004777;
   border-radius: 40px;
@@ -16,7 +16,7 @@
   display: block;
 }
 .dataContainer {
-  margin-top: 13rem;
+  margin-top: 7rem;
   margin-bottom: 1rem;
 }
 
@@ -30,12 +30,13 @@
   color: rgb(254, 202, 27);
   text-shadow: 2px 2px 2px #004777;
   font-family: monospace;
-  font-size: 5rem;
+  font-size: 4rem;
+  margin: 0.5rem;
 }
 .abName {
   display: inline;
   font-family: monospace;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
 }
 .infoContainer {
   padding-top: 1rem;

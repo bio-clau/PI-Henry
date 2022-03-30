@@ -8,7 +8,7 @@ export default function RandomPoke() {
 
   useEffect(() => {
     let numPoke = Math.floor(Math.random() * 39 + 1);
-    fetch(`http://localhost:3001/pokemons/${numPoke}`)
+    fetch(`https://henry-pi-backend.herokuapp.com/pokemons/${numPoke}`)
       .then((res) => res.json())
       .then((data) => {
         const poke = {
@@ -29,7 +29,7 @@ export default function RandomPoke() {
   }, []);
 
   return (
-    <>{!randomPoke.name? <Uploading name='Uploading'/>:
+    <>{!randomPoke.name? <Uploading name='Loading'/>:
     <div className={stylePoke.container}>
       <div className={stylePoke.titleContainer}>
         <h2 className={stylePoke.name}>{randomPoke.name.toUpperCase()}</h2>

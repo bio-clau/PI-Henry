@@ -1,6 +1,6 @@
 .about {
   background: rgb(239, 83, 80);
-  height: 80px;
+  height: 3rem;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -11,7 +11,7 @@
 }
 
 .about h5 {
-  margin-top: 25px;
+  margin-top: 10px;
   font-weight: bold;
   color: rgb(254, 202, 27);
   text-shadow: 2px 2px 2px #004777;

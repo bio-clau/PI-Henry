@@ -5,9 +5,10 @@ import { getTypes, getPoke, filterPoke } from "../../actions/actions";
 import Pagination from "./pagination";
 import PokeCard from "./pokeCard";
 import PokeNotFound from "./pokeNotFound";
-import { orderPoke } from "./functions/order";
-import { sortPoke } from "./functions/sort";
-import { sortOrigin } from "./functions/origin";
+import Uploading from '../pokemon/uploading'
+import orderPoke from "./functions/order";
+import sortPoke from "./functions/sort";
+import sortOrigin from "./functions/origin.js";
 
 function Home() {
   const dispatch = useDispatch();
@@ -59,13 +60,12 @@ function Home() {
 
   const selectOrder = function (e) {
     let auxPoke = [...pokemonFiltered];
-    console.log("in selectorder");
+    let listPoke = [...pokemonList]
     let list, newState;
     if (e.target.name === "show") {
-      console.log("before sortOrigin");
-      ({ list, newState } = sortOrigin(e.target.value, auxPoke, pokemonList));
+      ({ list, newState } = sortOrigin(e.target.value, auxPoke, listPoke));
     } else {
-      ({ list, newState } = orderPoke(e, auxPoke, pokemonList));
+      ({ list, newState } = orderPoke(e, auxPoke, listPoke));
     }
     setState({
       ...state,
@@ -84,6 +84,8 @@ function Home() {
     setState({
       ...state,
       sort: newAuxSort,
+      show:value==='RESET'?'ALL':state.show,
+      order: value==='RESET'?'NO ORDER': state.order,
       typesRender: newAuxRender,
       pag: 1,
       iOfLast: 12,
@@ -177,7 +179,7 @@ function Home() {
       </div>
       <div className={styleHome.cards}>
         {loading ? (
-          <h2>LOADING</h2>
+          <Uploading name='Loading' />
         ) : pokemonFiltered?.length < 1 ? (
           <PokeNotFound resetAll={resetAll} />
         ) : (

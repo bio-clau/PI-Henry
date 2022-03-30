@@ -133,6 +133,7 @@ export class Create extends Component {
     }
   }
   delType(e) {
+    e.preventDefault()
     let arr = [...this.state.types];
     if (arr.includes(e.target.value)) {
       let pos = arr.indexOf(e.target.value);
@@ -176,7 +177,7 @@ export class Create extends Component {
         {this.props.uploading ? (
           <Uploading name={"Uploading"} />
         ) : (
-          <form onSubmit={(e) => this.handleSubmit(e)} className={styleC.form}>
+          <form className={styleC.form}>
             <div className={styleC.formContainer}>
               <div className={styleC.inputContainer}>
                 <label className={styleC.label}>*Pokémon Name: </label>
@@ -367,7 +368,7 @@ export class Create extends Component {
                   )}
                 </div>
               </div>
-              <button className={styleC.submit} type="submit">
+              <button onClick={(e) => this.handleSubmit(e)} className={styleC.submit} type="submit">
                 Submit
               </button>
             </div>

@@ -18,7 +18,7 @@ describe("Pokemon model", () => {
       });
       it("should work when its a valid name", () => {
         Pokemon.create({
-          name: "PokeClau",
+          name: "POKECLAU",
           id: uuidv4(),
         });
       });

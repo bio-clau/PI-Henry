@@ -18,7 +18,7 @@ export default function Home() {
       <button onClick={goRandom} className={styleI.button}>
         Discover your Pokémon of the day
       </button>
-      <img src={pokeInit} alt="Poke Inicial" />
+      <img className={styleI.img} src={pokeInit} alt="Poke Inicial" />
     </div>
   );
 }

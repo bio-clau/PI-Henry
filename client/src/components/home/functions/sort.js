@@ -1,4 +1,4 @@
-exports.sortPoke = function (
+function sortPoke (
   value,
   pokemonList,
   pokemonFiltered,
@@ -21,3 +21,5 @@ exports.sortPoke = function (
   }
   return response;
 };
+
+export default sortPoke

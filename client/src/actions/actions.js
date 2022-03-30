@@ -89,6 +89,7 @@ export function getName(name) {
       .then((res) => res.json())
       .then((rta) => {
         dispatch({ type: LOADING_POKE, payload: false });
+        console.log(rta)
         dispatch({ type: GET_NAME, payload: rta });
       })
       .catch((err) => dispatch({ type: ERRORS, payload: [err] }));

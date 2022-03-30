@@ -11,17 +11,19 @@ const { v4: uuidv4 } = require('uuid');
 const getPokeName = async (name) => {
   let detPoke
   let prefix
-  let pokemon = await Pokemon.findAll({where: {name: name}})
+  let types
+  let pokemon = await Pokemon.findAll({where: {name: name.toUpperCase()}})
   // console.log(pokemon)
   if(pokemon.length>0){
     prefix = pokemon[0].dataValues
+    types = pokemon.dataValues.types.map(t=> t.dataValues.name)
   }else {
     pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
     prefix = pokemon.data
-    // console.log(pokemon)
+    types = pokemon.data.types.map(t=>t.type.name)
   }
   detPoke = {
-    name: prefix.name,
+    name: prefix.name.toUpperCase(),
     height: prefix.height,
     weight: prefix.weight,
     id: prefix.id,
@@ -29,7 +31,7 @@ const getPokeName = async (name) => {
     strength: prefix.stats? prefix.stats[1].base_stat : prefix.strength,
     defense: prefix.stats? prefix.stats[2].base_stat : prefix.defense,
     velocity: prefix.stats? prefix.stats[5].base_stat : prefix.velocity,
-    types: prefix.types,
+    types: types,
     img: prefix.sprites? prefix.sprites.other.home.front_default : prefix.img,
   };
   return detPoke;
@@ -81,7 +83,7 @@ exports.getPokeId = async (req, res, next) => {
         `https://pokeapi.co/api/v2/pokemon/${idPokemon}`
       );
       detPoke = {
-        name: pokemon.data.name,
+        name: pokemon.data.name.toUpperCase(),
         height: pokemon.data.height,
         weight: pokemon.data.weight,
         id: pokemon.data.id,
@@ -103,8 +105,11 @@ exports.getPokeId = async (req, res, next) => {
 
 exports.postPoke = async (req, res, next) => {
   try {
-    const { name, health, strength, defense, velocity, height, weight, image, types } =
+    let { name, health, strength, defense, velocity, height, weight, image, types } =
       req.body;
+      if(name){
+        name=name.toUpperCase()
+      }
       let result ={}
       if(image){
         result = await cloudinary.uploader.upload(image);

@@ -42,7 +42,7 @@ conn.sync({ force: true }).then( async () => {
   .then(rta => {
     rta.map(r => {
       let detPoke = {
-        name: r.data.name,
+        name: r.data.name.toUpperCase(),
         id: r.data.id,
         types: r.data.types.map(t=>t.type.name),
         img: r.data.sprites.other.home.front_default,

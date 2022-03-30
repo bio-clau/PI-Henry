@@ -36,14 +36,14 @@ describe("Pokemon routes", () => {
           types: ["rock", "bug", "ghost"],
         })
         .then((res) => {
-          expect(res.body.name).equal("pokeClau2");
+          expect(res.body.name).equal("POKECLAU2");
         }));
   });
   describe("GET /pokemons/:id", () => {
     it("responds with 200", () => agent.get("/pokemons/6").expect(200));
     it("responds with a pokemon", () => {
       agent.get("/pokemons/6").then((res) => {
-        expect(res.body.name).lessThanOrEqual("charizard");
+        expect(res.body.name).toEqual("charizard");
       });
     });
   });

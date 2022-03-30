@@ -24,7 +24,7 @@ function PokeCard({ poke }) {
         </div>
         <div>
           {poke.miniImg ? (
-            <img src={poke.miniImg} alt="miniPoke" />
+            <img className={styleCard.miniImg} src={poke.miniImg} alt="miniPoke" />
           ) : (
             <img className={styleCard.urlMini} src={poke.img} alt="miniPoke" />
           )}

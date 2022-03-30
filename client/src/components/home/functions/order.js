@@ -1,4 +1,4 @@
-exports.orderPoke = function (e, pokemonFiltered, pokemonList) {
+function orderPoke (e, pokemonFiltered, pokemonList) {
   let newState = {};
   let auxPoke = [...pokemonFiltered];
   switch (e.target.value) {
@@ -68,3 +68,5 @@ exports.orderPoke = function (e, pokemonFiltered, pokemonList) {
   }
   return newState;
 };
+
+export default orderPoke

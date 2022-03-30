@@ -22,7 +22,7 @@ function SearchBar() {
   };
 
   return (
-    <form className={styleS.form} onSubmit={(e) => handleSubmit(e)}>
+    <form className={styleS.form} >
       <input
         type="text"
         placeholder="Search by Name"
@@ -31,7 +31,7 @@ function SearchBar() {
         onChange={(e) => handleChange(e)}
       />
 
-      <button className={styleS.button} type="submit">
+      <button onClick={(e) => handleSubmit(e)} className={styleS.button} type="submit">
         SEARCH
       </button>
     </form>
