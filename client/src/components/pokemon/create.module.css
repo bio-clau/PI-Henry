@@ -4,7 +4,7 @@
 }
 
 .formContainer {
-  width: 70%;
+  width: 60%;
   margin-top: 2rem;
   padding: 1rem;
   border: 2px solid #004777;
@@ -15,7 +15,8 @@
 .inputContainer {
   padding: 0.8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .inputContainerType {
   padding: 1rem;
@@ -37,12 +38,7 @@
   font-size: 1.6rem;
 }
 .inputImg {
-  border: 2px solid #004777;
-  border-radius: 10px;
-  background-color: #0047773a;
-  color: rgb(254, 202, 27);
-  font-family: monospace;
-  font-size: 1rem;
+  visibility: hidden;
 }
 .danger {
   border: 2px solid #004777;
@@ -50,7 +46,7 @@
   background-color: #0047773a;
   color: rgb(254, 202, 27);
   font-family: monospace;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: underline;
   text-decoration-color: rgb(239, 83, 80);
 }
@@ -109,7 +105,7 @@
 
 .opCont {
   background: #00477752;
-  box-shadow: opx 8px 16px 0px #004777;
+  box-shadow: 8px 16px 0px #004777;
   z-index: 1;
 }
 .typeMenu {
@@ -135,4 +131,75 @@
   color: rgb(254, 202, 27);
   text-shadow: 2px 2px 2px #004777;
   margin-left: 1rem;
+}
+.labelImg {
+  cursor: pointer;
+  background: rgb(239, 83, 80);
+  border: 3px solid #004777;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: rgb(254, 202, 27);
+  text-shadow: 2px 2px 2px #004777;
+  margin-left: 1rem;
+
+}
+
+@media all and (max-width: 500px) {
+  .formContainer {
+    width: 80%;
+  }
+  .label {
+    color: rgb(254, 202, 27);
+    font-weight: bolder;
+    text-shadow: 0px 2px 2px #004777;
+    font-size: 1.2rem;
+  }
+  .inputContainer {
+    padding: 0;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 100%;
+  }
+  .input {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .danger {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .err {
+    font-size: 0.9rem;
+    color: #004777;
+    text-decoration: underline;
+    text-decoration-color: rgb(239, 83, 80);  
+  }
+  .errTypes {
+    font-size: 0.9rem;
+    color: #004777;
+    text-decoration: underline;
+    text-decoration-color: rgb(239, 83, 80);  
+  }
+  .opCont {
+    font-size: 1.1rem;
+  }
+  .typeMenu {
+    font-size: 1rem;
+    margin-left: 1rem;
+    height: fit-content;
+  }
+  .typeButton {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .labelImg {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .submit {
+    font-size: 1rem;
+  }
 }

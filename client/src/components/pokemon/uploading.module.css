@@ -5,3 +5,15 @@
   color: rgb(239, 83, 80);
   text-shadow: 2px 2px 2px #004777;
 }
+
+@media all and (max-width: 500px) {
+  .uploading {
+    font-size: 2rem;
+  }
+  .imgMob {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+  }
+}

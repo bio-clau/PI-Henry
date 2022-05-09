@@ -120,6 +120,21 @@ function Home() {
               <option className={styleHome.opCont} value="999 -> 0">
                 STRENGTH: 999 &#8594; 0
               </option>
+              <option className={styleHome.opContMob} defaultValue value="RESET">
+                RESET
+              </option>
+              <option className={styleHome.opContMob} value="A -> Z">
+                NAME &#129047;
+              </option>
+              <option className={styleHome.opContMob} value="Z -> A">
+                NAME &#129045;
+              </option>
+              <option className={styleHome.opContMob} value="0 -> 999">
+                STRENGTH &#129045;
+              </option>
+              <option className={styleHome.opContMob} value="999 -> 0">
+                STRENGTH &#129047;
+              </option>
             </select>
           </div>
           <div className={styleHome.menu}>
@@ -136,6 +151,16 @@ function Home() {
                 CREATED
               </option>
               <option className={styleHome.opCont} value="ORIGINALS">
+                ORIGINALS
+              </option>
+
+              <option className={styleHome.opContMob} defaultValue value="RESET">
+                RESET
+              </option>
+              <option className={styleHome.opContMob} value="CREATED">
+                CREATED
+              </option>
+              <option className={styleHome.opContMob} value="ORIGINALS">
                 ORIGINALS
               </option>
             </select>
@@ -159,6 +184,19 @@ function Home() {
                   {t.name}
                 </option>
               ))}
+
+              <option className={styleHome.opContMob} defaultValue value="RESET">
+                RESET
+              </option>
+              {types.map((t) => (
+                <option
+                  key={t.id}
+                  className={styleHome.opContMob}
+                  value={`${t.name.toUpperCase()}`}
+                >
+                  {t.name}
+                </option>
+              ))}
             </select>
           </div>
         </div>
@@ -177,6 +215,7 @@ function Home() {
           </div>
         </div>
       </div>
+
       <div className={styleHome.cards}>
         {loading ? (
           <Uploading name='Loading' />

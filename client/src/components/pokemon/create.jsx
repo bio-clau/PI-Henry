@@ -95,13 +95,13 @@ export class Create extends Component {
         }
       }
       if (aux2.includes(i) && input[i] !== "") {
-        if (!/^[0-9]+$/.test(input[i])) {
+        if (!/^[0-9]+$/.test(input[i]) ) {
           errors = {
             ...errors,
             disSend: true,
             [i]: `Pokémon ${i} must be a number`,
           };
-        } else {
+        } else  {
           errors = { ...errors, [i]: "" };
         }
       }
@@ -159,16 +159,24 @@ export class Create extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let err = this.validateSend(this.state);
-    if (!err.disSend) {
-      this.props.addPoke(this.state);
-    } else {
-      this.setState({
-        ...this.state,
-        errors: err,
-        [e.target.name]: e.target.value,
-      });
+    
+    if(this.state.errors.disSend){
+      alert('Se deben corregir algunos campos')
+    }else {
+      let err = this.validateSend(this.state);
+      if (!err.disSend) {
+        this.props.addPoke(this.state);
+      } else {
+        alert('Se deben corregir algunos campos')
+        this.setState({
+          ...this.state,
+          errors: err,
+          [e.target.name]: e.target.value,
+        });
+      }
     }
+
+    
   }
 
   render() {
@@ -176,7 +184,7 @@ export class Create extends Component {
       <div>
         {this.props.uploading ? (
           <Uploading name={"Uploading"} />
-        ) : (
+        ) : (<>
           <form className={styleC.form}>
             <div className={styleC.formContainer}>
               <div className={styleC.inputContainer}>
@@ -355,12 +363,14 @@ export class Create extends Component {
                 <p className={styleC.errTypes}>{this.state.errors.types}</p>
               )}
               <div className={styleC.inputContainer}>
-                <label className={styleC.label}>Pokémon Image: </label>
+                <label for='pokeImg' className={styleC.label}>Pokémon Image: </label>
                 <div>
+                <label for='pokeImg' className={styleC.labelImg}>Choose Image </label>
                   <input
                     className={styleC.inputImg}
                     type="file"
                     name="image"
+                    id='pokeImg'
                     onChange={(e) => this.handleImageChange(e)}
                   />
                   {this.state.errors.image !== "" && (
@@ -373,6 +383,7 @@ export class Create extends Component {
               </button>
             </div>
           </form>
+          </>
         )}
       </div>
     );

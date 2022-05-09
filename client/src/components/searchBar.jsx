@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getName } from "../actions/actions";
 import { useNavigate } from "react-router-dom";
+import searchIcon from '../img/buscar.png'
 
 import styleS from "./searchBar.module.css";
 
@@ -33,6 +34,9 @@ function SearchBar() {
 
       <button onClick={(e) => handleSubmit(e)} className={styleS.button} type="submit">
         SEARCH
+      </button>
+      <button onClick={(e) => handleSubmit(e)} className={styleS.buttonMobile} type="submit">
+        <img src={searchIcon} className={styleS.searchIcon} alt="search" />
       </button>
     </form>
   );

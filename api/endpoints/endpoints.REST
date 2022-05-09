@@ -1,4 +1,4 @@
-GET http://localhost:3002/pokemons
+GET http://localhost:3001/pokemons
 
 ###
 GET http://localhost:3001/pokemons/10

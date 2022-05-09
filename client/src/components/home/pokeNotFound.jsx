@@ -14,7 +14,7 @@ function PokeNotFound({ resetAll, goback, goinit }) {
   return (
     <div className={styleNot.container}>
       <div className={styleNot.gif}>
-        <img src={notFound} alt="" />
+        <img src={notFound} className={styleNot.gifMob} alt="" />
       </div>
       <div className={styleNot.msg}>Pokèmon not found.</div>
       <button onClick={goinit? goInit : goback ? goHome : resetAll} className={styleNot.button}>

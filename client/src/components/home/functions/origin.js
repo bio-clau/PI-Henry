@@ -1,26 +1,27 @@
 function sortOrigin (value, pokemonFiltered, pokemonList) {
   const response = {};
-  console.log("in sortorigin");
   if (value === "CREATED") {
-    response.list = pokemonFiltered.filter((p) =>
+    response.list = pokemonList.filter((p) =>
       /^[0-9A-F]{8}-[0-9A-F]{4}-[4][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i.test(
         p.id
       )
     );
     response.newState = {
+      order:'NO ORDER',
       show: value,
       pag: 1,
       iOfLast: 12,
       iOfFirst: 0,
     };
   } else if (value === "ORIGINALS") {
-    response.list = pokemonFiltered.filter(
+    response.list = pokemonList.filter(
       (p) =>
         !/^[0-9A-F]{8}-[0-9A-F]{4}-[4][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i.test(
           p.id
         )
     );
     response.newState = {
+      order:'NO ORDER',
       show: value,
       pag: 1,
       iOfLast: 12,

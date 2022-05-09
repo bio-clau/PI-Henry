@@ -10,8 +10,6 @@
   margin-top: 5rem;
   height: 5rem;
   width: 25rem;
-  margin-right: 4rem;
-  margin-left: 10px;
   border-radius: 8px;
   background: rgb(239, 83, 80);
   font-family: monospace;
@@ -26,8 +24,20 @@
   cursor: pointer;
 }
 .container img {
-  height: 400px;
+  max-height: 40%;
+  max-width: 40%;
+  width: auto;
+  height: auto;
   margin-bottom: 0;
   padding-bottom: 0;
   margin-top: 6rem;
+}
+
+@media all and (max-width: 500px) {
+  .img {
+    max-width: 100% !important; 
+    max-height: 100% !important;
+    width: auto;
+    height: auto;
+  }
 }

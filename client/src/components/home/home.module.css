@@ -6,6 +6,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.opContMob {
+  display: none;
+}
 
 .title {
   display: inline;
@@ -41,17 +44,7 @@
   z-index: 1;
 }
 
-.opCont p {
-  color: rgb(254, 202, 27);
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 2rem;
-  display: block;
-}
 
-.opCont p:hover {
-  background-color: #004777a4;
-}
 
 .filterBy {
   display: flex;
@@ -74,4 +67,34 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+@media all and (max-width: 500px){
+  .filterCont {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .menu {
+    width: fit-content;
+  }
+  .name {
+    margin-left: 0;
+    font-size: 1rem;
+    width: 7rem;
+  }
+  .opCont {
+    display: none;
+  }
+  .opContMob{
+    display: block;
+    background: #00477752;
+    box-shadow: opx 8px 16px 0px #004777;
+    z-index: 1;
+    width: fit-content;
+  }
+  .filterBy {
+    font-size: 1rem;
+  }
 }
