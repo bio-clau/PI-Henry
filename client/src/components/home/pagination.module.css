@@ -1,4 +1,5 @@
 .pagination {
+  display:block;
   position: fixed;
   left: 0;
   right: 0;

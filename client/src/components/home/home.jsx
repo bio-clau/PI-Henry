@@ -216,7 +216,8 @@ function Home() {
         </div>
       </div>
 
-      <div className={styleHome.cards}>
+      <div >
+        <div className={styleHome.cards}>
         {loading ? (
           <Uploading name='Loading' />
         ) : pokemonFiltered?.length < 1 ? (
@@ -226,7 +227,8 @@ function Home() {
             ?.slice(state.iOfFirst, state.iOfLast)
             .map((poke) => <PokeCard key={poke.id} poke={poke} />)
         )}
-
+        </div>
+        <div>
         {pokemonFiltered?.length < 1 ? undefined : (
           <Pagination
             pag={state.pag}
@@ -234,6 +236,7 @@ function Home() {
             totPoke={pokemonFiltered?.length}
           />
         )}
+        </div>
       </div>
     </div>
   );
