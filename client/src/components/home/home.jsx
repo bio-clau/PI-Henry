@@ -9,6 +9,8 @@ import Uploading from '../pokemon/uploading'
 import orderPoke from "./functions/order";
 import sortPoke from "./functions/sort";
 import sortOrigin from "./functions/origin.js";
+import uArrow from '../../img/uArrow.png'
+import dArrow from '../../img/dArrow.png'
 
 function Home() {
   const dispatch = useDispatch();
@@ -124,16 +126,16 @@ function Home() {
                 RESET
               </option>
               <option className={styleHome.opContMob} value="A -> Z">
-                NAME &#129047;
+                {`NAME ▼`}
               </option>
               <option className={styleHome.opContMob} value="Z -> A">
-                NAME &#129045;
+                {`NAME ▲`}
               </option>
               <option className={styleHome.opContMob} value="0 -> 999">
-                STRENGTH &#129045;
+                {`STRENGTH 	▲`}
               </option>
               <option className={styleHome.opContMob} value="999 -> 0">
-                STRENGTH &#129047;
+                {`STRENGTH ▼`}
               </option>
             </select>
           </div>

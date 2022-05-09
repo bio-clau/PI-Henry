@@ -17,7 +17,7 @@ function SearchBar() {
 
   const handleSubmit = function (e) {
     e.preventDefault();
-    dispatch(getName(search));
+    dispatch(getName(search.toLowerCase()));
     setSearch("");
     navigate("/detail");
   };
