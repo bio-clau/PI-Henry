@@ -50,5 +50,30 @@ CLOUDINARY_API_SECRET=cloudinary api secret
 In the "api" folder you have to run npm install and then npm run dev
 In the "client" foldet you have to run npm install and then npm start
 
+## Video of the SPA
+[Go to YouTube](https://youtu.be/Un1ZjoOC0uw)
 
+## ScreenShots
+<p align="center">Landing Page</p>
+<p align="center">
+<a href='https://henry-pi-frontend.herokuapp.com/' width='30%'/><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/landing.png' width='75%'/></a>
+<a href="https://henry-pi-frontend.herokuapp.com/"><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/mob-landing.png' width='16.6%'/></a>
+</p>
 
+<p align="center">Home</p>
+<p align="center">
+<a href='https://henry-pi-frontend.herokuapp.com/home' width='30%'/><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/pokedex.png' width='75%'/></a>
+<a href="https://henry-pi-frontend.herokuapp.com/home"><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/mob-pokedex.png' width='16.7%'/></a>
+</p>
+
+<p align="center">Detail</p>
+<p align="center">
+<a href='https://henry-pi-frontend.herokuapp.com/home' width='30%'/><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/detail.png' width='75%'/></a>
+<a href="https://henry-pi-frontend.herokuapp.com/home"><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/mob-detail.png' width='16.64%'/></a>
+</p>
+
+<p align="center">Create</p>
+<p align="center">
+<a href='https://henry-pi-frontend.herokuapp.com/create' width='30%'/><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/create.png' width='75%'/></a>
+<a href="https://henry-pi-frontend.herokuapp.com/create"><img src='https://raw.githubusercontent.com/bio-clau/PI-Henry/master/PI/mob-create.png' width='16.6%'/></a>
+</p>
